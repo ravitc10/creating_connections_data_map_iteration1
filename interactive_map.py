@@ -161,6 +161,7 @@ for code in unique_codes:
 # Dash app
 # ----------------------------
 app = Dash(__name__)
+server = app.server   # 🔥 REQUIRED for Render
 
 app.layout = html.Div(
     style={
@@ -221,10 +222,8 @@ app.layout = html.Div(
     ],
 )
 
-
-# ----------------------------
 # Run
 # ----------------------------
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", "8050"))
+    port = int(os.environ.get("PORT", 10000))  # 🔥 Render uses PORT env var
     app.run(host="0.0.0.0", port=port, debug=False)
