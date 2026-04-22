@@ -10,8 +10,8 @@ from dash import Dash, dcc, html
 # ----------------------------
 # Files
 # ----------------------------
-JSON_FILE = Path("DEL_test1_tsne.json")
-CSV_FILE = Path("DEL_test1.csv")
+JSON_FILE = Path("DEL_final_tsne.json")
+CSV_FILE = Path("DEL_final.csv")
 
 if not JSON_FILE.exists():
     raise FileNotFoundError(f"Missing {JSON_FILE.resolve()}")
