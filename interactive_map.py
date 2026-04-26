@@ -51,7 +51,7 @@ def get_column(df, col_name):
 
 # Extract correctly
 Code_col = get_column(df, "Code")
-Data_col = get_column(df, "Data")
+Data_col = get_column(df, "Text")
 
 # Clean values
 df["Code"] = Code_col.fillna("").astype(str).str.strip()
@@ -82,7 +82,7 @@ def wrap_text(text, width=60):
     return "<br>".join(lines)
 
 
-df["wrapped_data"] = df["Data"].apply(lambda x: wrap_text(x, 60))
+df["wrapped_data"] = df["Text"].apply(lambda x: wrap_text(x, 60))
 
 
 # ----------------------------
