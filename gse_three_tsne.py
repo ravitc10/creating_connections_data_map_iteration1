@@ -8,8 +8,8 @@ from tqdm import tqdm
 # =========================
 # LOCAL CONFIG
 # =========================
-INPUT_PATH = "DEL_final_with_embeddings.json"   # <-- IMPORTANT: use embedded file
-OUTPUT_FRONTEND = "DEL_final_tsne.json"
+INPUT_PATH = "thursday_with_embeddings.json"   # <-- IMPORTANT: use embedded file
+OUTPUT_FRONTEND = "thursday_tsne.json"
 OUTPUT_BACKEND = ""
 
 PERPLEXITY = 30.0
